@@ -11,7 +11,7 @@ const mailer = require('../services/mailer')
 module.exports = {
     signup(req, res, next) {
         const user = req.body
-        return db.createUser(user.name, user.email, user.password, ROLES.regular).then(user => {
+        return db.createUser(user.name, user.email, user.password, ROLES.manager).then(user => {
             return res.status(201).json({ user: clearUnneededDataFromPayload(user), token: getToken(user._id, user.role) })
         }).catch(e => next(e))
     },
