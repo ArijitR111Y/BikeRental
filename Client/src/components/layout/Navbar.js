@@ -13,10 +13,10 @@ const NavBarLink = ({ to, label }) => (
 );
 
 export const PNavbar = ({ isManager, isAuthenticated, logout, myId }) => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <NavLink className="navbar-brand" to="/">
       {" "}
-      Bikes Rental ©{" "}
+      Wheels2Rent ©{" "}
     </NavLink>
     <button
       className="navbar-toggler"

@@ -8,9 +8,9 @@ export const UserReservationsTable = ({ reservations, onCancelClick }) => (
                 <tr>
                     <th>Start Date</th>
                     <th>End Date</th>
-                    <th>Bike Model</th>
-                    <th>Bike Color</th>
-                    <th>Bike Weight in kg</th>
+                    <th>Bike Name</th>
+                    <th>Source Dock</th>
+                    <th>Pricing (per hour)</th>
                     {
                         onCancelClick && <th className="text-center">Cancel Reservation</th>
                     }

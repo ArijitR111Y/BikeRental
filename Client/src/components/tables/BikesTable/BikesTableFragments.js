@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import { s3Url } from '../../../config/constants';
+// import { s3Url } from '../../../config/constants';
 import React from 'react'
 
 export const BasicTableHeaders = () => (
     <React.Fragment>
         <th>Image</th>
-        <th>Model</th>
-        <th>Color</th>
-        <th>Weight in kg</th>
+        <th>Bike Name</th>
+        <th>Source Dock</th>
+        <th>Pricing (per hour)</th>
     </React.Fragment>
 )
 
@@ -22,13 +22,7 @@ export const AdminTableHeaders = () => (
 
 export const BasicTableDescription = ({ item }) => (
     <React.Fragment>
-        <td>
-            {item.imageName ?
-                <img style={{ maxHeight: "60px" }} alt="bike" src={s3Url + item.imageName}></img>
-                :
-                <p>No image available</p>
-            }
-        </td>
+        <td><img style={{ maxHeight: "60px" }} alt="bike" src="https://image.flaticon.com/icons/png/512/71/71422.png"></img></td>
         <td>{item.model}</td>
         <td>{item.color}</td>
         <td >{item.weight}</td>
