@@ -15,15 +15,6 @@ const aggregationStore = {
 
 ],
 }
-// function getAverageRate(items) {
-//     return items.map(item => {
-//         if (item.ratings.length) {
-//             item.rate = item.ratings.reduce((cum, current) => cum + current.rate, 0) / item.ratings.length
-//         }
-//         delete item.ratings
-//         return item
-//     })
-// }
 module.exports = {
     createBike(model, weight, color, latitude, longitude, isAvailable, addressName) {
         const location = {

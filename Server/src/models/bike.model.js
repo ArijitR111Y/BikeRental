@@ -10,8 +10,8 @@ const bikeSchema = new Schema({
     color: {
         type: String,
         required: true,
-        enum: ['red', 'blue', 'black', 'yellow', 'green', 'white'],
-        default: 'white'
+        enum: ['SJT', 'TT', 'MB', 'SMV', 'GDN', 'Men\'s Hostel'],
+        default: 'SJT'
     },
     weight: {
         type: Number,

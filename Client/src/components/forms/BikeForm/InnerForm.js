@@ -5,23 +5,23 @@ import { InputFeedback } from '../../text/InputFeedback';
 
 export const InnerForm = ({ touched, errors, values, children, isSubmitting }) => (
     <Form>
-        <DefaultInput label="Model">
+        <DefaultInput label="Bike Name">
             <Field type="text" name="model" className="form-control" />
             <InputFeedback error={touched.model && errors.model} />
         </DefaultInput>
-        <DefaultInput label="Weight in kg">
+        <DefaultInput label="Rate per hour">
             <Field type="number" name="weight" className="form-control" />
             <InputFeedback error={touched.weight && errors.weight} />
         </DefaultInput>
-        <DefaultInput label="Color">
+        <DefaultInput label="Source Dock">
             <Field component="select" name="color" className="form-control">
                 <option value=""></option>
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="black">Black</option>
-                <option value="yellow">Yellow</option>
-                <option value="green">Green</option>
-                <option value="white">White</option>
+                <option value="SJT">SJT</option>
+                <option value="TT">TT</option>
+                <option value="MB">MB</option>
+                <option value="SMV">SMV</option>
+                <option value="GDN">GDN</option>
+                <option value="Men's Hostel">Men's Hostel</option>
             </Field>
             <InputFeedback error={touched.color && errors.color} />
         </DefaultInput>
