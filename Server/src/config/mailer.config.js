@@ -2,9 +2,12 @@
 
 module.exports =
     {
-        service: 'Gmail',
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
+        requireTLS: true,
         auth: {
-            user: process.env.mailerUser,
-            pass: process.env.mailerPass
+            user: "royarijit998@gmail.com",
+            pass: "goodboy*123###"
         }
     } 
